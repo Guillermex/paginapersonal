@@ -1,0 +1,260 @@
+/* -------------------------------------
+-------------GLOBALES-------------------
+---------------------------------------- */
+
+
+/* html {
+    scroll-behavior: smooth;
+} */
+
+* {
+    font-family: 'Noto Serif JP', serif;
+}
+
+
+/* TIPO DE LETRA 1 */
+
+.fuente1 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+/* TIPO DE LETRA 2 */
+
+.fuente2 {
+    font-family: 'Indie Flower', cursive;
+}
+
+
+/* TIPO DE LETRA 3 */
+
+.fuente3 {
+    font-family: 'Palette Mosaic', cursive;
+}
+
+
+/* TIPO DE LETRA 4 */
+
+.fuente4 {
+    font-family: 'Luckiest Guy', cursive;
+}
+
+
+/* TIPO DE LETRA 5 */
+
+.fuente5 {
+    font-family: 'Klee One', cursive;
+}
+
+
+/* TIPO DE LETRA 6 */
+
+.fuente6 {
+    font-family: 'Fredoka One', cursive;
+}
+
+
+/* POSICION RELATIVA */
+
+.relative {
+    position: relative;
+}
+
+
+/* POSICION ABSOLUTA */
+
+.absolute {
+    position: absolute;
+}
+
+
+/* CENTRAR - XY */
+
+.centrado {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* DEFAULT SETTINGS */
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a:visited,
+a:link,
+a:focus,
+a:hover,
+a:active {
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/* BODDY */
+
+body {
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #000000;
+    border: 1px solid black;
+}
+
+
+/* MIS ESTILOS */
+
+.padinearx {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+}
+
+.padineary {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+
+.negrita {
+    font-weight: 900;
+}
+
+.raton:hover {
+    cursor: pointer;
+}
+
+
+/* =========================================
+                    HEADER
+============================================ */
+
+header .nombre {
+    font-size: 50px;
+    transition: all .5s;
+}
+
+header .nombre:hover {
+    font-size: 70px;
+}
+
+.grid-fotos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+
+.grid-fotos .grid-item {
+    background-color: gray;
+    height: 300px;
+    border: 5px solid black;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+
+/* =========================================
+                    FOTOS GRID
+============================================ */
+
+
+/* FOTO 1 */
+
+.grid-fotos .grid-item:nth-child(1) {
+    background-image: url(../img/foto1.jpeg);
+    background-size: cover;
+    background-position: center left;
+}
+
+.grid-fotos .grid-item:nth-child(1):hover {
+    background-position: center right;
+    cursor: pointer;
+}
+
+
+/* FOTO 2 */
+
+.grid-fotos .grid-item:nth-child(2) {
+    background-image: url(../img/foto2.jpeg);
+    background-size: cover;
+    background-position: top left;
+}
+
+.grid-fotos .grid-item:nth-child(2):hover {
+    background-position: bottom right;
+    cursor: pointer;
+}
+
+
+/* FOTO 3 */
+
+.grid-fotos .grid-item:nth-child(3) {
+    background-image: url(../img/foto3.jpeg);
+    background-size: cover;
+    background-position: top left;
+}
+
+.grid-fotos .grid-item:nth-child(3):hover {
+    background-position: bottom right;
+    cursor: pointer;
+}
+
+
+/* =========================================
+                    DATOS PERSONALES
+============================================ */
+
+ul li i {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+/* -------------------------------------
+-------TABLET HORIZONTAL LG 1024px------
+---------------------------------------- */
+
+.Tablet {}
+
+@media(max-width:1199px) and (min-width:992px) {}
+
+
+/* -------------------------------------
+-------TABLET VERTICAL MD 768px---------
+---------------------------------------- */
+
+.Tablet2 {}
+
+@media(max-width:991px) and (min-width:768px) {}
+
+
+/* -------------------------------------
+-------MOVIL HORIZONTAL SM 576px--------
+---------------------------------------- */
+
+.Phone {}
+
+@media(max-width:767px) and (min-width:576px) {}
+
+
+/*--------------------------------------
+------- MOVIL VERTICAL 320px------------
+---------------------------------------- */
+
+.Phone1 {}
+
+@media(max-width:575px) {}
